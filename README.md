@@ -1,7 +1,8 @@
 # The json_static project
 
-If, for our program, we are sure that we know the structure of the JSON file, a statically typed technique can and should be used instead. It is shown in the json_static project. The situation here is similar to that of the projects processing the TOML file.
-The source code of the static version first declares three structs—one for every object type contained in the JSON file we are going to process. Each struct is preceded by the following attribute:
+If, for our program, we are sure that we know the structure of the JSON file, a statically typed technique can and should be used instead. It is shown in this json_static project. The situation here is similar to that of the projects processing the [TOML file](https://github.com/IkehAkinyemi/toml_static).
+
+The source code of the static version first declares three structs—one for every object type contained in the [JSON file](https://github.com/IkehAkinyemi/json_static/tree/main/data) we are going to process. Each struct is preceded by the following attribute:
 ```
   #[derive(Deserialize, Serialize, Debug)]
 ```
